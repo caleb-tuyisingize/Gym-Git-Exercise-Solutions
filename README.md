@@ -1,7 +1,7 @@
 # Gym-Git-Exercise-Solutions
 Github repository that I will use to paste your terminal history into after each exercise
 ## bundle 1
-Exercises 1
+# Exercises 1
 ```bash
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
 $ git checkout -b master
@@ -336,3 +336,107 @@ To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
 $
 ```
+
+
+# Exercises 2
+```bash
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ touch home.html
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ touch about.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ touch team.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git add team.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git stash
+Saved working directory and index state WIP on dev: fca81a4 changes on bundle 1 exercise1
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git add home.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git stash
+Saved working directory and index state WIP on dev: fca81a4 changes on bundle 1 exercise1
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git add about.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git stash
+Saved working directory and index state WIP on dev: fca81a4 changes on bundle 1 exercise1
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git stash list
+stash@{0}: WIP on dev: fca81a4 changes on bundle 1 exercise1
+stash@{1}: WIP on dev: fca81a4 changes on bundle 1 exercise1
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git stash pop stash@{1}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   about.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped stash@{1} (d68d9a03d3f17322ae411df4a307ec4d97d54399)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git commit -m "current changes"
+[dev 43429f7] current changes
+ 4 files changed, 337 insertions(+), 3 deletions(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.49 KiB | 637.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   fca81a4..43429f7  dev -> dev
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git stash pop stash@{0}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   team.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped stash@{0} (667815a751d63fd69ed8cb71c474739c1dfaf833)
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git reset
+Unstaged changes after reset:
+M       team.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$
+```
+
+### Bundle 2
+
+# Exercise 1
+```bash
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ touch services.html
+
+
