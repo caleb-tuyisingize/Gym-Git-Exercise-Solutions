@@ -581,3 +581,84 @@ Switched to branch 'ft/service-redesign'
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
 $
 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git stash pop stash@{0}
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+The stash entry is kept in case you need it again.
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 928 bytes | 77.00 KiB/s, done.
+From https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions
+   dbfab27..f2c9648  main       -> origin/main
+Updating dbfab27..f2c9648
+error: Your local changes to the following files would be overwritten by merge:
+        README.md
+Please commit your changes or stash them before you merge.
+Aborting
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git add README.md
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git stash
+Saved working directory and index state WIP on main: dbfab27 Merge pull request #2 from caleb-tuyisingize/ft/bundle-2
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git pull
+Updating dbfab27..f2c9648
+Fast-forward
+ README.md    | 103 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ service.html |   0
+ 2 files changed, 103 insertions(+)
+ create mode 100644 service.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git add service.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git stash
+Saved working directory and index state WIP on main: f2c9648 Merge pull request #3 from caleb-tuyisingize/ft/service-redesign
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$
+
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 921 bytes | 184.00 KiB/s, done.
+From https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions
+   f2c9648..1bf216a  main                -> origin/main
+   23d9f2d..53fbd6e  ft/service-redesign -> origin/ft/service-redesign
+Auto-merging README.md
+Auto-merging service.html
+CONFLICT (content): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
+
