@@ -760,3 +760,26 @@ Switched to a new branch 'ft/home-page-redesign'
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
 $
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m "Changes applied on home"
+[ft/home-page-redesign 3e36874] Changes applied on home
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   e7b8392..3e36874  ft/home-page-redesign -> ft/home-page-redesign
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$
+
