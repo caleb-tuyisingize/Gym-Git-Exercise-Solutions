@@ -730,3 +730,25 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
 user@LA
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "changes back in main"
+[main 6ba7619] changes back in main
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 403 bytes | 403.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   e561760..6ba7619  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$
