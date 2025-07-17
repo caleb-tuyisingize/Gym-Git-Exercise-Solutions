@@ -640,23 +640,10 @@ Saved working directory and index state WIP on main: f2c9648 Merge pull request 
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
 $
-
-user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
-$ git push
-Enumerating objects: 9, done.
-Counting objects: 100% (8/8), done.
-Delta compression using up to 16 threads
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (5/5), 606 bytes | 606.00 KiB/s, done.
-Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
-To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
-   1d88bf1..c07716c  main -> main
-
-user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
-$
 ```
+### Bundle 3
 
+# Exercise 1
 
 ```bash
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
@@ -689,55 +676,49 @@ To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
 $
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+$ git revert -m 1 6e6e42f89763432ad25ac2b2a4e8a3f3b02e21fc
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: could not revert 6e6e42f... readme files
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+$ git commit -m "m"
+[ft/team-page 28d39dc] m
+ 1 file changed, 2 insertions(+), 79 deletions(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
-$ git switch main
-Switched to branch 'main'
-Your branch is up to date with 'origin/main'.
+$ git add .
 
-user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
-$ git checkout -b ft/contact-page
-Switched to a new branch 'ft/contact-page'
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit -m "changes by revert"
+[ft/team-page e85a8da] changes by revert
+ 1 file changed, 23 insertions(+)
 
-user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/contact-page)
-$ git switch ft/team-page
-Switched to branch 'ft/team-page'
+ user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.63 KiB | 333.00 KiB/s, done.
+Total 11 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   6e6e42f..e85a8da  ft/team-page -> ft/team-page
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
 $
-
-user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
-$ git log 
-commit 6e6e42f89763432ad25ac2b2a4e8a3f3b02e21fc (HEAD -> ft/team-page, origin/ft/team-page)
-Author: Caleb TUYISINGIZE <calebmevis11@gmail.com>
-Date:   Thu Jul 17 18:09:09 2025 +0200
-
-
-user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
-$ git switch ft/contact-page
-Switched to branch 'ft/contact-page'
-
-user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/contact-page)
-$ git log ft/team-page --oneline
-6e6e42f (origin/ft/team-page, ft/team-page) readme files
-9cbaba7 feat: team file
-c07716c (HEAD -> ft/contact-page) Merge branch 'main' of https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions
-945714f readme bundle 2
-1d88bf1 Merge pull request #7 from caleb-tuyisingize/ft/bundle-2
-35e1318 Merge pull request #6 from caleb-tuyisingize/ft/service-redesign
-403335b (origin/ft/service-redesign) Merge branch 'main' into ft/service-redesign
-0a725c6 (Gym-Git-Exercise-Solutions/ft/service-redesign, ft/service-redesign) feat: new-service-differ-to-before
-3121518 (origin/ft/bundle-2, Gym-Git-Exercise-Solutions/ft/bundle-2, ft/bundle-2) services in bundle 2     
-dc65d9e Merge branch 'main' of https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions
-e3072b6 changes applied on service
-1bf216a Merge pull request #4 from caleb-tuyisingize/ft/service-redesign
-53fbd6e fix: service-page
-f2c9648 Merge pull request #3 from caleb-tuyisingize/ft/service-redesign
-23d9f2d feat: new-feature-service-file
-dbfab27 Merge pull request #2 from caleb-tuyisingize/ft/bundle-2
-3a00187 feat: new-featuer-added
-43429f7 (origin/dev, dev) current changes
-fca81a4 changes on bundle 1 exercise1
-50400c0 (Gym-Git-Exercise-Solutions/dev) branch test deleted
-5935dc5 (origin/test, origin/master, master) Initial commit
-
-
