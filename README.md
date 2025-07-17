@@ -740,4 +740,16 @@ fca81a4 changes on bundle 1 exercise1
 50400c0 (Gym-Git-Exercise-Solutions/dev) branch test deleted
 5935dc5 (origin/test, origin/master, master) Initial commit
 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 965 bytes | 482.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   d1e134c..64f9160  ft/faq-page -> ft/faq-page
 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/faq-page)
