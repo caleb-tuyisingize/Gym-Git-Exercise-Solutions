@@ -676,3 +676,26 @@ To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
 $
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+$ git revert -m 1 6e6e42f89763432ad25ac2b2a4e8a3f3b02e21fc
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: could not revert 6e6e42f... readme files
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+$ git commit -m "m"
+[ft/team-page 28d39dc] m
+ 1 file changed, 2 insertions(+), 79 deletions(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
