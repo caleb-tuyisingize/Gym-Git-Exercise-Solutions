@@ -904,3 +904,184 @@ To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/squashing)
 $
+
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+   d1d3f9c..b08c545  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m "another Welcome message changed"
+[main c794833] another Welcome message changed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+   b08c545..c794833  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m "reversed"
+[main d37c1ef] reversed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+   c794833..d37c1ef  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git checkout -b fx/index
+Switched to a new branch 'fx/index'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$ git commit -m "fix: welcome message changed"
+[fx/index 6270f11] fix: welcome message changed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$ git push origin fx/index
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'fx/index' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/git-cafe-exercise/pull/new/fx/index
+remote:
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+ * [new branch]      fx/index -> fx/index
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$
+```
+
+
+###### Bundle 6
+# Exercises 1
+```bash 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$ git checkout -b ft/menu-page
+Switched to a new branch 'ft/menu-page'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$ git commit -m "fix: welcome to Menu message changed"
+[ft/menu-page b8ced96] fix: welcome to Menu message changed
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$ git push origin ft/menu-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 436 bytes | 436.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/menu-page' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/git-cafe-exercise/pull/new/ft/menu-page
+remote:
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+ * [new branch]      ft/menu-page -> ft/menu-page
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$
+```
+# Exercises 2
+
+```bash
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$ git checkout -b fix/contact-page
+Switched to a new branch 'fix/contact-page'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git commit -m "fix: contact title added"
+[fix/contact-page 8de5088] fix: contact title added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git push origin fix/contact-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 321 bytes | 321.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'fix/contact-page' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/git-cafe-exercise/pull/new/fix/contact-page
+remote:
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+ * [new branch]      fix/contact-page -> fix/contact-page
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$
+```
+# Exercises 3
+
+```bash
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git commit -m "fix: contact changed to new"
+[fix/contact-page 0cbcefe] fix: contact changed to new
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git push origin fix/contact-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+   8de5088..0cbcefe  fix/contact-page -> fix/contact-page
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$
+```
