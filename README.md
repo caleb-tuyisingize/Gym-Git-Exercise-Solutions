@@ -727,5 +727,27 @@ fca81a4 changes on bundle 1 exercise1
 50400c0 (Gym-Git-Exercise-Solutions/dev) branch test deleted
 5935dc5 (origin/test, origin/master, master) Initial commit
 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git add contact.html README.md
 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git commit -m "new md and contact featurws"
+[ft/contact-page 1599008] new md and contact featurws
+ 2 files changed, 102 insertions(+), 1 deletion(-)
+ create mode 100644 contact.html
 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git push origin ft/contact-page
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.33 KiB | 455.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions/pull/new/ft/contact-page      
+remote:
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
