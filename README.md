@@ -773,3 +773,44 @@ $ git remote add git-copy https://github.com/caleb-tuyisingize/Gym-Git-Exercise-
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
 $
+
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "copy of files in another repo"
+[main 73fc1ce] copy of files in another repo
+ 2 files changed, 22 insertions(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git push origin
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 490 bytes | 490.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   b88f081..73fc1ce  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git push git-copy
+Enumerating objects: 102, done.
+Counting objects: 100% (102/102), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (101/101), done.
+Writing objects: 100% (102/102), 22.15 KiB | 504.00 KiB/s, done.
+Total 102 (delta 58), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (58/58), done.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions-copy.git
+ * [new branch]      main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$
+```
+## Exercises 2
+
+```bash
+
