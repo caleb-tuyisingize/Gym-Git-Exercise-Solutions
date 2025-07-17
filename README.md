@@ -753,3 +753,10 @@ To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
    d1e134c..64f9160  ft/faq-page -> ft/faq-page
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/faq-page)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$
