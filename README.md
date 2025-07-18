@@ -553,6 +553,75 @@ $ git commit -m "feat: new-feature-service-file"
  2 files changed, 103 insertions(+)
  create mode 100644 service.html
 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git switch ft/service-redesign
+warning: unable to rmdir 'git-cafe-exercise': Directory not empty
+Switched to branch 'ft/service-redesign'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git add .
+warning: adding embedded git repository: git-cafe-exercise
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> git-cafe-exercise
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached git-cafe-exercise
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git commit -m "changes applied on service"
+[ft/service-redesign 1dc4468] changes applied on service
+ 2 files changed, 3 insertions(+)
+ create mode 160000 git-cafe-exercise
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git push origin ft/service-redesign
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        ft/service-redesign -> ft/service-redesign (non-fast-forward)
+error: failed to push some refs to 'https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git'   
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git pull origin ft/service-redesign
+From https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions
+ * branch            ft/service-redesign -> FETCH_HEAD
+Auto-merging service.html
+CONFLICT (content): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign|MERGING)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign|MERGING)
+$ git commit -m "changes applied on service"
+[ft/service-redesign d9f1c79] changes applied on service
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 710 bytes | 355.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   403335b..d9f1c79  ft/service-redesign -> ft/service-redesign
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$
+
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
 $ git push origin ft/service-redesign
 Enumerating objects: 5, done.
