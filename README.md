@@ -623,6 +623,48 @@ user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-red
 $
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git commit -m "tasks in readme md file"
+[ft/service-redesign 10237eb] tasks in readme md file
+ 1 file changed, 69 insertions(+)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.19 KiB | 406.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   d9f1c79..10237eb  ft/service-redesign -> ft/service-redesign
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git fetch origin
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git merge origin main
+Auto-merging README.md
+Merge made by the 'ort' strategy.
+ README.md     | 445 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ contact.html  |  13 ++
+ faq.html      |  13 ++
+ home.html     |   3 +-
+ services.html |  13 ++
+ team.html     |   2 +-
+ tofooter.html |  16 +++
+ 7 files changed, 492 insertions(+), 13 deletions(-)
+ create mode 100644 contact.html
+ create mode 100644 faq.html
+ create mode 100644 tofooter.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
 $ git push origin ft/service-redesign
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
