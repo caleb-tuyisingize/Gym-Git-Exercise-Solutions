@@ -709,25 +709,448 @@ Saved working directory and index state WIP on main: f2c9648 Merge pull request 
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
 $
+```
+### Bundle 3
+
+# Exercise 1
+
+```bash
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/team-page
+
+Switched to a new branch 'ft/team-page'
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$ touch team.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit -m "feat: team file"
+[ft/team-page 9cbaba7] feat: team file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+$ git revert -m 1 6e6e42f89763432ad25ac2b2a4e8a3f3b02e21fc
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: could not revert 6e6e42f... readme files
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+$ git commit -m "m"
+[ft/team-page 28d39dc] m
+ 1 file changed, 2 insertions(+), 79 deletions(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page|REVERTING)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit -m "changes by revert"
+[ft/team-page e85a8da] changes by revert
+ 1 file changed, 23 insertions(+)
+
+ user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.63 KiB | 333.00 KiB/s, done.
+Total 11 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   6e6e42f..e85a8da  ft/team-page -> ft/team-page
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/team-page)
+$
 
 
-user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/service-redesign)
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@LA
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "changes back in main"
+[main 6ba7619] changes back in main
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 403 bytes | 403.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   e561760..6ba7619  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$
+```
+
+#### Bundle 4
+
+# Exercises 1
+
+```bash
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
 $ git switch main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$
+
 user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
-$ git pull
-remote: Enumerating objects: 1, done.
-remote: Counting objects: 100% (1/1), done.
-remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-Unpacking objects: 100% (1/1), 921 bytes | 184.00 KiB/s, done.
-From https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions
-   f2c9648..1bf216a  main                -> origin/main
-   23d9f2d..53fbd6e  ft/service-redesign -> origin/ft/service-redesign
+$ git remote add git-copy https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions-copy.git
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$
+
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "copy of files in another repo"
+[main 73fc1ce] copy of files in another repo
+ 2 files changed, 22 insertions(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git push origin
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 490 bytes | 490.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   b88f081..73fc1ce  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git push git-copy
+Enumerating objects: 102, done.
+Counting objects: 100% (102/102), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (101/101), done.
+Writing objects: 100% (102/102), 22.15 KiB | 504.00 KiB/s, done.
+Total 102 (delta 58), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (58/58), done.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions-copy.git
+ * [new branch]      main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$
+```
+## Exercises 2
+
+```bash
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/footer)
+$ touch tofooter.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/footer)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit -m "Footer branch"
+[ft/footer 4155814] Footer branch
+ 2 files changed, 55 insertions(+), 1 deletion(-)
+ create mode 100644 tofooter.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 821 bytes | 54.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/footer)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit -m "Footer branch more changes"
+[ft/footer 8f8f563] Footer branch more changes
+ 2 files changed, 4 insertions(+)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 394 bytes | 394.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+   4155814..8f8f563  ft/footer -> ft/footer
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/footer)
+$
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git merge --squash ft/footer
 Auto-merging README.md
-Auto-merging service.html
-CONFLICT (content): Merge conflict in service.html
+CONFLICT (content): Merge conflict in README.md
+Squash commit -- not updating HEAD
 Automatic merge failed; fix conflicts and then commit the result.
 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing df889a6] footer changes squashing
+ 3 files changed, 120 insertions(+), 4 deletions(-)
+ create mode 100644 tofooter.html
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.20 KiB | 612.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/caleb-tuyisingize/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions (ft/squashing)
+$
+
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+   d1d3f9c..b08c545  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m "another Welcome message changed"
+[main c794833] another Welcome message changed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+   b08c545..c794833  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m "reversed"
+[main d37c1ef] reversed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+   c794833..d37c1ef  main -> main
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git checkout -b fx/index
+Switched to a new branch 'fx/index'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$ git commit -m "fix: welcome message changed"
+[fx/index 6270f11] fix: welcome message changed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$ git push origin fx/index
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'fx/index' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/git-cafe-exercise/pull/new/fx/index
+remote:
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+ * [new branch]      fx/index -> fx/index
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$
+```
+
+
+###### Bundle 6
+# Exercises 1
+```bash 
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fx/index)
+$ git checkout -b ft/menu-page
+Switched to a new branch 'ft/menu-page'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$ git commit -m "fix: welcome to Menu message changed"
+[ft/menu-page b8ced96] fix: welcome to Menu message changed
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$ git push origin ft/menu-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 436 bytes | 436.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/menu-page' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/git-cafe-exercise/pull/new/ft/menu-page
+remote:
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+ * [new branch]      ft/menu-page -> ft/menu-page
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$
+```
+# Exercises 2
+
+```bash
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (ft/menu-page)
+$ git checkout -b fix/contact-page
+Switched to a new branch 'fix/contact-page'
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git commit -m "fix: contact title added"
+[fix/contact-page 8de5088] fix: contact title added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git push origin fix/contact-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 321 bytes | 321.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'fix/contact-page' on GitHub by visiting:
+remote:      https://github.com/caleb-tuyisingize/git-cafe-exercise/pull/new/fix/contact-page
+remote:
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+ * [new branch]      fix/contact-page -> fix/contact-page
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$
+```
+# Exercises 3
+
+```bash
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git add .
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git commit -m "fix: contact changed to new"
+[fix/contact-page 0cbcefe] fix: contact changed to new
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$ git push origin fix/contact-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/caleb-tuyisingize/git-cafe-exercise.git
+   8de5088..0cbcefe  fix/contact-page -> fix/contact-page
+
+user@LAPTOP-Q6O9PDFL MINGW64 /c/gymer/Gym-Git-Exercise-Solutions/git-cafe-exercise (fix/contact-page)      
+$
+```
